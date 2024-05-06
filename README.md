@@ -2,10 +2,10 @@
 
 ### How to install 
 
-Fisrt needs install python and dependences<br>
+First you need to install python and it's dependences<br>
 
 `install python3`<br><br>
-After you install python, lets go to dependences <br><br>
+After you install python, lets go to dependencies <br><br>
 `pip install pypdf2==2.12.1`<br>
 `pip install tk` <br>
 `pip install time` <br>
@@ -16,9 +16,9 @@ Test code
 `py .\ebookfreader.py` <br>
 `python3 ./ebookfreader.py`
 
-This code open a new screen if all content is functionality is ok.
+This code opens up a new screen if all the content functionality is working.
 
-lets go to compile the code
+then we compile the code
 
 `pyinstaller --onefile ebookfreader.py` <br><br>
 
