@@ -44,6 +44,7 @@ class PDFReader:
         self.current_speed = 500
         self.is_reading = False
         self.current_page = 0
+        self.num_pages = 0
         self.conf_file = None
 
     def select_pdf(self):
@@ -96,6 +97,9 @@ class PDFReader:
                 time.sleep(60 / self.current_speed)  # Adjust the speed here
                 if not self.is_reading:
                     break
+            # If reading was not paused, display "END"
+            if self.is_reading:
+                self.text.config(text="END")
 
     def run(self):
         self.root.mainloop()
